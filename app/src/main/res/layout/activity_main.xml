@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:layout_width="match_parent">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/topLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="Create an Account \n     to Get Started"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="First Name"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:background="@drawable/formshape"/>
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Last Name"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:background="@drawable/formshape"/>
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Username"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:background="@drawable/formshape"/>
+            <EditText
+                android:id="@+id/emailAddress"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Email Address"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/formshape"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Password"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:background="@drawable/formshape"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/formshape"
+                    android:gravity="center"
+                    android:hint="Date of Birth"
+                    android:inputType="date" />
+
+                <ImageButton
+                    android:id="@+id/calendarButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#03AA7322"
+                    app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_signup"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:height="45dp"
+                android:background="@drawable/signup_button"
+                android:text="Sign Up"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="By pressing 'SIGN UP' You agree\n    to our terms and conditions"
+                android:textColor="#F7FAF9"/>
+            <TextView
+                android:id="@+id/developedDate"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="App was developed on 04/24/2020 by Natnael Bekele"
+                android:textColor="#F7FAF9"/>
+            <TextView
+                android:id="@+id/currentDate"
+                android:inputType="date"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Date"
+                android:textColor="#F7FAF9"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
